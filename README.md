@@ -161,14 +161,11 @@ While this prototype is functional and efficient, there are several directions t
 |--------- | -----------|
 |**Languages**	  | HTML5, CSS3, JavaScript ES6|
 |**Framework**	  | Bootstrap 5|
-|**AI Assistance**| GPT-5 for layout suggestions & README drafting|
 
 ---
 
 ## 🤝 Attribution
 
 Bootstrap Docs:	Button & grid utility classes.
-
-AI:	GPT-5.
 
 ---
