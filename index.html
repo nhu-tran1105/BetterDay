@@ -12,113 +12,140 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
-    <div class="container">
-      <span class="navbar-brand fw-bold"><i class="bi bi-calendar2-week"></i> BetterDay</span>
 
-      <div class="ms-auto d-flex gap-3">
-        <a href="https://github.com/nhu-tran1105/BetterDay" 
-           class="text-white fw-bold small text-decoration-none">
-           GitHub Source Code
-        </a>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnhu-tran1105.github.io%2FBetterDay%2F"
-           class="text-white fw-bold small text-decoration-none">
-           Nu HTML Validation Report
-        </a>
-        <a href="https://wave.webaim.org/report#/https://nhu-tran1105.github.io/BetterDay/"
-           class="text-white fw-bold small text-decoration-none">
-           WAVE Accessibility Report
-        </a>
-      </div>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <span class="navbar-brand fw-bold">
+      <i class="bi bi-calendar2-week"></i> BetterDay
+    </span>
 
-  <main class="container py-5">
-    <h1 class="text-center mb-3"><i class="bi bi-heart-fill text-danger"></i> BetterDay Calendar</h1>
-    <p class="text-center text-muted mb-5">Plan your perfect day, one tap at a time 💖</p>
-
-    <div class="row mb-5">
-      <div class="col-lg-10 mx-auto">
-        <div class="card shadow-sm border-0">
-          <div class="card-header bg-danger text-white fw-bold">
-            Before – iOS Calendar
-          </div>
-          <div class="card-body">
-            <p>
-              The iOS Calendar requires too many scrolls and taps to create events.
-              For example, setting <strong>8:45 PM tomorrow</strong> takes multiple wheel spins and lacks clear visual feedback.
-            </p>
-
-            <div class="text-center my-3">
-              <img src="image/beforeImage.jpg" alt="Screenshot of the original iOS Calendar interface" class="img-fluid rounded border shadow-sm">
-            </div>
-
-            <p><strong>Problem:</strong> Inefficient scrolling, cluttered day view, and poor one-hand usability.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      <div class="col-lg-10 mx-auto">
-        <div class="card shadow-sm border-0">
-          <div class="card-header bg-success text-white fw-bold">
-            After – BetterDay Prototype
-          </div>
-
-          <div class="card-body">
-            <p>
-              Our redesign uses a simple grid for date & time selection — fewer taps, faster event setup, and cleaner feedback.
-            </p>
-
-            <h5 id="currentMonth" class="text-center fw-semibold mb-3">Month Loading…</h5>
-
-            <div id="calendarGrid" class="calendar-grid mb-3"></div>
-            <div id="timeGrid" class="time-grid mb-3"></div>
-
-            <label for="noteInput" class="form-label fw-semibold">Event Note</label>
-
-            <div class="input-group mb-3">
-              <span class="input-group-text" aria-hidden="true"><i class="bi bi-pencil"></i></span>
-              <input 
-                type="text" 
-                id="noteInput" 
-                class="form-control" 
-                placeholder="Add a quick note for your event..."
-                aria-label="Event note input">
-              <button class="btn btn-outline-primary" id="saveNoteBtn">Save Note</button>
-            </div>
-
-            <div id="resultBox" class="alert alert-info small" role="status">Select a date and time.</div>
-            <p><i class="bi bi-mouse"></i> Click Count: <span id="clickCount">0</span></p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card border-0 shadow-sm mx-auto p-4 mt-5">
-      <h2 class="fw-bold mb-3">
-        <i class="bi bi-stars"></i> How It Could Be Better
-      </h2>
-      <ul class="mb-0">
-        <li>Add <strong>recurring events</strong> (daily or weekly reminders).</li>
-        <li>Let users <strong>edit or delete saved events</strong> from a history list.</li>
-        <li>Save notes to <strong>localStorage</strong> so they remain after reloading.</li>
-        <li>Allow <strong>emoji or color tags</strong> to make the planner more expressive and fun.</li>
-      </ul>
-    </div>
-  </main>
-
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <small>
-      Created by Nhu Tran |
-      <a href="https://github.com/nhu-tran1105" class="text-white text-decoration-underline">
-        GitHub Profile
+    <div class="ms-auto d-flex gap-3">
+      <a href="https://github.com/nhu-tran1105/BetterDay" 
+         class="fw-bold small text-decoration-none text-white">
+         GitHub Source Code
       </a>
-    </small>
-  </footer>
 
-  <script type="module" src="script/scripts.js"></script>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnhu-tran1105.github.io%2FBetterDay%2F"
+         class="fw-bold small text-decoration-none text-white">
+         Nu HTML Validation Report
+      </a>
+
+      <a href="https://wave.webaim.org/report#/https://nhu-tran1105.github.io/BetterDay/"
+         class="fw-bold small text-decoration-none text-white">
+         WAVE Accessibility Report
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<main class="container py-5">
+  <h1 class="text-center mb-3 text-dark">
+    <i class="bi bi-heart-fill text-danger" aria-hidden="true"></i>
+    BetterDay Calendar
+  </h1>
+
+  <p class="text-center text-secondary mb-5">
+    Plan your perfect day, one tap at a time 💖
+  </p>
+
+  <section class="row mb-5">
+    <div class="col-lg-10 mx-auto">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-danger text-white fw-bold">
+          Before – iOS Calendar
+        </div>
+        <div class="card-body">
+          <p>
+            The iOS Calendar requires too many scrolls and taps to create events. 
+            For example, setting <strong>8:45 PM tomorrow</strong>
+            takes multiple wheel spins and lacks clear visual feedback.
+          </p>
+
+          <div class="text-center my-3">
+            <img 
+              src="image/beforeImage.jpg" 
+              alt="Screenshot showing original iOS Calendar interface with scroll wheels"
+              class="img-fluid rounded border shadow-sm">
+          </div>
+
+          <p><strong>Problem:</strong> Inefficient scrolling, cluttered day view, and poor one-hand usability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row mb-5">
+    <div class="col-lg-10 mx-auto">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-success text-white fw-bold">
+          After – BetterDay Prototype
+        </div>
+
+        <div class="card-body">
+          <p>
+            Our redesign uses a simple grid for selecting date and time — fewer taps, faster event setup, and cleaner feedback.
+          </p>
+
+          <h2 id="currentMonth" class="text-center fw-semibold mb-3">November 2025</h2>
+
+          <div id="calendarGrid" class="calendar-grid mb-3"></div>
+          <div id="timeGrid" class="time-grid mb-3"></div>
+
+          <label for="noteInput" class="form-label fw-semibold">Event Note</label>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">
+              <i class="bi bi-pencil" aria-hidden="true"></i>
+            </span>
+
+            <input 
+              type="text" 
+              id="noteInput" 
+              class="form-control"
+              placeholder="Add a quick note for your event..."
+              aria-label="Event note">
+            
+            <button class="btn btn-primary" id="saveNoteBtn">Save Note</button>
+          </div>
+
+          <div id="resultBox" class="alert alert-info small" role="status">
+            Select a date and time.
+          </div>
+
+          <p class="text-dark">
+            <i class="bi bi-mouse" aria-hidden="true"></i>
+            Click Count: <span id="clickCount">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card border-0 shadow-sm mx-auto p-4 mt-5">
+    <h2 class="fw-bold mb-3">
+      <i class="bi bi-stars" aria-hidden="true"></i> How It Could Be Better
+    </h2>
+
+    <ul class="mb-0">
+      <li>Add <strong>recurring events</strong> for weekly reminders.</li>
+      <li>Let users <strong>edit or delete saved events</strong>.</li>
+      <li>Save notes to <strong>localStorage</strong> so they persist.</li>
+      <li>Allow <strong>emoji or color tags</strong> to personalize events.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+  <small>
+    Created by Nhu Tran |
+    <a href="https://github.com/nhu-tran1105" class="text-white text-decoration-underline">
+      GitHub Profile
+    </a>
+  </small>
+</footer>
+
+<script type="module" src="script/scripts.js"></script>
 </body>
 </html>
