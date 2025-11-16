@@ -47,8 +47,8 @@ Image Credit: Apple iOS Calendar (used for educational comparison only)
 
 ## 🚀 Live Demo & Source
 
-**Live Site:** [BetterDay Calendar – GitHub Pages](https://yourusername.github.io/betterday-calendar/)  
-**Source Code:** [GitHub Repository](https://github.com/yourusername/betterday-calendar)
+**Live Site:** [BetterDay Calendar – GitHub Pages](https://nhu-tran1105.github.io/BetterDay/)  
+**Source Code:** [GitHub Repository](https://github.com/nhu-tran1105/BetterDay)
 
 ---
 
