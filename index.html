@@ -14,13 +14,16 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
-    <div class="container">
-      <span class="navbar-brand fw-bold"><i class="bi bi-calendar2-week"></i> BetterDay</span>
-      <a href="https://github.com/nhu-tran1105/BetterDay" class="text-white small text-decoration-none">View Source Code</a>
-      <a href="https://github.com/nhu-tran1105/BetterDay" class="text-white small text-decoration-none">View Nu Validator</a>
-      <a href="https://github.com/nhu-tran1105/BetterDay" class="text-white small text-decoration-none">View WAVE Check</a>
+  <div class="container">
+    <span class="navbar-brand fw-bold"><i class="bi bi-calendar2-week"></i> BetterDay</span>
+
+    <div class="ms-auto d-flex gap-3">
+      <a href="https://github.com/nhu-tran1105/BetterDay" class="text-white fw-bold small text-decoration-none">Source Code</a>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnhu-tran1105.github.io%2FBetterDay%2F" class="text-white fw-bold small text-decoration-none">Nu Validator</a>
+      <a href="https://wave.webaim.org/report#/https://nhu-tran1105.github.io/BetterDay/" class="text-white fw-bold small text-decoration-none">WAVE Check</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <main class="container py-5">
     <h1 class="text-center mb-3"><i class="bi bi-heart-fill text-danger"></i> BetterDay Calendar</h1>
@@ -61,6 +64,7 @@
 
 						<div id="timeGrid" class="time-grid mb-3"></div>
 
+            <label for="noteInput" class="form-label fw-semibold">Event Note</label>
 						<div class="input-group mb-3">
 							<span class="input-group-text"><i class="bi bi-pencil"></i></span>
 							<input type="text" id="noteInput" class="form-control" placeholder="Add a quick note for your event...">
