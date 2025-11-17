@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  background: #a70a50;
+  background: #d52f7a;
   border-bottom: 3px solid #ffb6c1;
 }
 
@@ -33,7 +33,7 @@ h1, h5 {
 }
 
 h1 {
-  color: #d63384;
+  color: #d52f7a;
   font-weight: 700;
 }
 
@@ -55,11 +55,11 @@ h1 {
 }
 
 .card-header.bg-danger {
-  background-color: #ff85a1 !important;
+  background-color: #d52f7a !important;
 }
 
 .card-header.bg-success {
-  background-color: #f06292 !important; /* rosy pink */
+  background-color: #d52f7a !important; /* rosy pink */
 }
 
 .calendar-grid,
@@ -128,7 +128,7 @@ button.slot.selected {
 }
 
 #saveNoteBtn {
-  background: #f06292;
+  background: #d52f7a;
   color: white;
   font-weight: 600;
   border: none;
@@ -136,7 +136,7 @@ button.slot.selected {
 }
 
 #saveNoteBtn:hover {
-  background: #ec407a;
+  background: #d52f7a;
   transform: scale(1.05);
 }
 
